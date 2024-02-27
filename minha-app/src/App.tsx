@@ -1,7 +1,6 @@
 import { GlobalStyles } from "./styles/globalstyles";
 
 import {
-  Container,
   Header,
   Logo,
   Main,
@@ -41,37 +40,32 @@ import {
 } from "./styles/styles";
 
 import { ArrowRight, ArrowLeft } from "./components/Gallery/styles";
-
 import Icon from "./components/Icon";
 import Gallery from "./components/Gallery";
 import Form from "./components/Form";
 import Button from "./components/Button";
 import pixelToRem from "./utils/pxToRem";
+import Container from "./components/Container";
 
 function App() {
   return (
     <>
-      <Container flex="column" margin={pixelToRem(24, 112, 50)}>
+      <Container flex="column" margin={pixelToRem(15, 50, 20)}>
         <GlobalStyles />
-
         <Header>
           <Logo />
         </Header>
 
         <Main>
           <FirstTitle>Finalmente é possível!</FirstTitle>
-
           <SecondTitle>
             Sua jornada para Marte começa aqui <span>.</span>
           </SecondTitle>
-
           <Subtitle>
             A primeira viagem para Marte estará disponivél apartir do dia
             12/03/2028. Inscreva-se em nossa lista de espera.
           </Subtitle>
-
           <AstrounautIllustration />
-
           <DivButton>
             <Button text="Inscreva-se agora" fullWidth />
           </DivButton>
@@ -104,8 +98,7 @@ function App() {
 
           <Icon
             src="/images/icon-telescope.svg"
-            txt="Experiencia única
-e exclusiva."
+            txt="Experiencia única e exclusiva."
             alt="Telescope"
           />
         </DivIcons>
@@ -146,9 +139,7 @@ e exclusiva."
               }}
             >
               <FirstTitle>Por que Marte?</FirstTitle>
-
               <SecondSubTitle>Sobre o planeta vermelho</SecondSubTitle>
-
               <TextMars>
                 A uma distância média de 140 milhões de milhas, Marte é um dos
                 vizinhos habitáveis ​​mais próximos da Terra. Marte está mais ou
@@ -159,7 +150,6 @@ e exclusiva."
                 significa que podemos cultivar plantas em Marte apenas
                 comprimindo a atmosfera.
               </TextMars>
-
               <TextMars>
                 A gravidade em Marte é cerca de 38% da da Terra, então você
                 seria capaz de levantar coisas pesadas e dar voltas. Além disso,
@@ -207,7 +197,6 @@ e exclusiva."
               Inscreva-se agora
             </TextSubscribe>
           </DivLogo>
-
           <ArrowLeft />
           <Gallery />
           <ArrowRight />

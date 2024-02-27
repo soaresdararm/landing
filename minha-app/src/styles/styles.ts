@@ -26,22 +26,6 @@ interface ImageGalleryProps {
   objectFit?: "cover" | "contain" | "fill" | "none" | "scale-down";
 }
 
-export const Container = styled.div<GalleryFlexContainerProps>`
-  display: flex;
-  flex-direction: ${(props) => props.flex};
-  width: ${(props) => props.width};
-  margin: ${(props) => props.margin};
-  padding: ${(props) => props.padding};
-  align-items: ${(props) => props.alignItems};
-  justify-content: ${(props) => props.justifyContent};
-
-  @media ${device.mobile} {
-    margin: ${pixelToRem(17)};
-    align-items: center;
-    justify-content: center;
-  }
-`;
-
 export const Header = styled.div`
   display: flex;
   padding-bottom: ${pixelToRem(95)};

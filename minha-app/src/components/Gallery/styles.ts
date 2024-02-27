@@ -16,8 +16,7 @@ export const GalleryContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow-x: auto;
-  overflow-y: hidden;
+  overflow: hidden;
 
   img {
     width: ${pixelToRem(345)};

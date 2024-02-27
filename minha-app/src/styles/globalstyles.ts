@@ -3,11 +3,11 @@ import pixelToRem from "../utils/pxToRem";
 import { device } from "./responsive";
 
 export const GlobalStyles = createGlobalStyle`
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
- }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
 
 body{

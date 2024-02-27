@@ -48,8 +48,8 @@ export const Logo = styled.image<GalleryFlexContainerProps>`
 export const Main = styled.div`
   display: flex;
   flex-direction: column;
-  max-width: ${pixelToRem(815)};
-  padding-bottom: ${pixelToRem(103)};
+  max-width: ${pixelToRem(700)};
+  padding-bottom: ${pixelToRem(100)};
 
   @media ${device.mobile} {
     max-width: 100vw;
@@ -98,13 +98,14 @@ export const Subtitle = styled.p`
 `;
 
 export const AstrounautIllustration = styled.image`
-  width: ${pixelToRem(472)};
+  width: ${pixelToRem(350)};
   height: ${pixelToRem(600)};
   position: absolute;
   background-image: url("/images/home-mars-right.svg");
   background-repeat: no-repeat;
   right: 0;
-  top: ${pixelToRem(10)};
+  top: ${pixelToRem(30)};
+  overflow: hidden;
 
   @media ${device.mobile} {
     position: relative;
@@ -128,26 +129,6 @@ export const DivButton = styled.div`
 
   @media ${device.mobile} {
     padding-bottom: ${pixelToRem(63)};
-  }
-`;
-
-export const DivIcons = styled(motion.div)`
-  display: flex;
-  justify-content: space-between;
-  max-width: ${pixelToRem(1440)};
-  align-items: center;
-  width: 100%;
-
-  @media ${device.mobile} {
-    flex-direction: column;
-    text-align: center;
-    gap: ${pixelToRem(64)};
-    padding-bottom: ${pixelToRem(72)};
-    max-width: ${pixelToRem(222)};
-
-    & image {
-      margin: 0 auto;
-    }
   }
 `;
 

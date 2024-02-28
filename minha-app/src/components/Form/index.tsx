@@ -5,7 +5,7 @@ export interface FormProps {
   type?: "text" | "email" | "number";
 }
 
-function Form({ text }: FormProps) {
+function ComponentForm({ text }: FormProps) {
   return (
     <>
       <FormComponent>
@@ -16,4 +16,4 @@ function Form({ text }: FormProps) {
   );
 }
 
-export default Form;
+export default ComponentForm;

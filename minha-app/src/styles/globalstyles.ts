@@ -51,7 +51,7 @@ body{
   --background-form: #0E0D40;
   
   /* Fonts */
-    --font-display: 800 ${pixelToRem(62)}/${pixelToRem(96)} "Heebo", sans-serif;
+    --font-display: 800 ${pixelToRem(55)}/${pixelToRem(80)} "Heebo", sans-serif;
 
     --font-heading-1: 700 ${pixelToRem(32)}/${pixelToRem(
   48
